@@ -1,0 +1,907 @@
+html {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 1px;
+    background-color: #FFFFFF;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    padding: 1rem;
+    width: 100%;
+    height: 10vh;
+    background-color: #5CD2EF;
+    z-index: 1;
+}
+
+ul {
+    margin-top: 0;
+    list-style: none;
+    display: flex;
+}
+
+.nav_img {
+    float: left;
+    margin-top: -0.5rem;
+    margin-left: -4.8rem;
+    width: 30vw;
+}
+
+.nav_links {
+    float: right;
+    text-decoration: none;
+    font-size: 1.15rem;
+    padding: 1rem 3rem;
+    color: black;
+    font-weight: 400;
+}
+
+.pot {
+    text-align: center;
+}
+
+.pot img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 2%;
+}
+
+footer {
+    background-color: #333333;
+}
+
+.content {
+    display: flex;
+}
+
+.secs {
+    width: 50rem;
+    color: white;
+    justify-content: justify;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+
+.secs p {
+    margin-top: 1rem;
+}
+
+.sec {
+    width: 50rem;
+    color: white;
+    justify-content: justify;
+    margin-left: 6rem;
+    margin-bottom: 3rem;
+}
+
+.show {
+    margin-top: .5rem;
+    width: 98vw;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.middle {
+    position: absolute;
+    top: 15.5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 20%;
+}
+
+.slide p {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #f7f7f7;
+}
+
+.process {
+    margin-top: 40rem;
+    padding: 5rem;
+    background-color: #f7f7f7;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.process button {
+    width: 14rem;
+    height: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 100px;
+    border: none;
+    background-color: #FFC20F;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.process button a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    font-family: "lato";
+}
+
+.process button:hover {
+    transform: scale(1.5);
+}
+
+.steps {
+    padding: 1rem;
+    background-color: #FFFFFF;
+    margin-left: 1rem;
+    display: flex;
+}
+
+.step i {
+    font-size: 1.8rem;
+    color: red;
+}
+
+.step {
+    text-align: center;
+    width: 20rem;
+    font-size: 1.2rem;
+    justify-content: justify;
+    margin-left: 1rem;
+    padding: 2rem;
+}
+
+.warc {
+    padding: 5rem 0;
+    background-color: #f7f7f7;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.warc h1 {
+    margin-bottom: 3rem;
+}
+
+.stepss {
+    padding: 2rem 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.stepy {
+    width: 20rem;
+    font-size: 1rem;
+    padding: 2rem;
+}
+
+.stepy i {
+    font-size: 1.8rem;
+    color: #FF9A00;
+}
+
+.thingo {
+    width: 30rem;
+    margin: 3rem;
+    text-align: center;
+}
+
+.also {
+    padding: 3rem 0;
+    background-color: #f7f7f7;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.also h1 {
+    font-size: 2.5rem;
+}
+
+.thingo p {
+    font-size: 2rem;
+}
+
+.things {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FFFFFF;
+    margin: 0 3rem;
+}
+
+.things img {
+    width: 30rem;
+    height: 20rem;
+    border: 0.4rem solid blanchedalmond;
+}
+
+.conct {
+    text-align: center;
+    padding: 3rem;
+    background-color: #f7f7f7;
+}
+
+.cn {
+    font-size: 5rem;
+    padding: 2rem;
+}
+
+.cn a {
+    margin: 6rem;
+}
+
+@media (max-width:1500px) {
+    html {
+        font-size: 100%;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        padding: 1rem 4rem;
+        width: 100%;
+        height: 10vh;
+        background-color: #5CD2EF;
+        z-index: 1;
+    }
+    ul {
+        margin-top: 0;
+        list-style: none;
+        display: flex;
+    }
+    .nav_img {
+        margin-top: -0.5rem;
+        margin-left: -4.8rem;
+        width: 30vw;
+    }
+    .nav_links {
+        float: right;
+        text-decoration: none;
+        font-size: 1.45vw;
+        padding: 1rem 3vw;
+        color: black;
+        font-weight: 400;
+    }
+    .show {
+        width: 98.5vw;
+        background-color: #F7F7F7;
+        height: 70%;
+        overflow: hidden;
+    }
+    .middle {
+        position: absolute;
+        top: 15.5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .process {
+        margin-top: 95vh;
+        padding: 5rem;
+        background-color: #f7f7f7;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .process button {
+        width: 14rem;
+        height: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        border-radius: 100px;
+        border: none;
+        background-color: #FFC20F;
+        transition: all .2s;
+        cursor: pointer;
+    }
+    .process button a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+        font-family: "lato";
+    }
+    .process button:hover {
+        transform: scale(1.5);
+    }
+    .steps {
+        padding: 2vw;
+        background-color: #FFFFFF;
+        margin-left: 1rem;
+        display: flex;
+    }
+    .step i {
+        font-size: 1.8rem;
+        color: red;
+    }
+    .step {
+        text-align: center;
+        width: 20rem;
+        font-size: 1.2rem;
+        justify-content: justify;
+        margin-left: 1rem;
+        padding: 2rem;
+    }
+    .warc {
+        padding: 5rem 0;
+        background-color: #f7f7f7;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .warc h1 {
+        margin-bottom: 3rem;
+    }
+    .stepss {
+        padding: 2rem 0;
+        width: 100%;
+        background-color: #FFFFFF;
+        display: flex;
+    }
+    .stepy {
+        width: 20rem;
+        font-size: 1rem;
+        padding: 2rem;
+    }
+    .stepy i {
+        font-size: 1.8rem;
+        color: #FF9A00;
+    }
+    .thingo {
+        width: 30vw;
+        margin: 7vw;
+        text-align: center;
+    }
+    .also {
+        padding: 3rem 0;
+        background-color: #f7f7f7;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .also h1 {
+        font-size: 2.5rem;
+    }
+    .thingo p {
+        font-size: 2rem;
+        margin-left: 5rem;
+    }
+    .things {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #FFFFFF;
+        margin: 0;
+    }
+    .things img {
+        width: 30rem;
+        height: 20rem;
+        border: 0.4rem solid blanchedalmond;
+    }
+    .conct {
+        text-align: center;
+        padding: 3rem;
+        background-color: #f7f7f7;
+    }
+    .cn {
+        font-size: 5rem;
+        padding: 2rem;
+    }
+    .cn a {
+        margin: 6rem;
+    }
+}
+
+@media (max-width:1200px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        padding: 1rem;
+        width: 100vw;
+        height: 10vh;
+        background-color: #5CD2EF;
+        z-index: 1;
+    }
+    .about {
+        margin-left: -2rem;
+        margin-top: 80vh;
+    }
+    .about__content {
+        margin: 0vh auto;
+        width: 70vw;
+        padding: 4rem;
+        background-color: #ffffff;
+    }
+    .nav_img {
+        margin: 0;
+        width: 20rem;
+    }
+    .nav_links {
+        text-decoration: none;
+        font-size: 2vw;
+        padding: 1vw 1.8vw;
+        color: black;
+        font-weight: 400;
+    }
+    html {
+        font-size: 75%;
+    }
+    body {
+        padding: 0;
+    }
+    .slides {
+        padding: 0;
+        font-size: 20%;
+        width: 500%;
+        height: 70%;
+        display: flex;
+    }
+    .show {
+        width: 97.5vw;
+        background-color: #F7F7F7;
+        height: 75vh;
+        overflow: hidden;
+    }
+    .s3 h2 {
+        font-size: 1.5rem;
+    }
+    .slide img {
+        width: 100%;
+        height: 70%;
+    }
+    .process {
+        margin-top: 50rem;
+        padding: 5rem;
+        background-color: #f7f7f7;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .process button {
+        width: 14rem;
+        height: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        border-radius: 100px;
+        border: none;
+        background-color: #FFC20F;
+        transition: all .2s;
+        cursor: pointer;
+    }
+    .process button a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+        font-family: "lato";
+    }
+    .center {
+        padding-left: 2vw;
+    }
+    .steps {
+        background-color: #FFFFFF;
+        align-items: center;
+        text-align: center;
+        margin: 0 1.2vw;
+        display: flex;
+    }
+    .step i {
+        font-size: 1.8rem;
+        color: red;
+    }
+    .step {
+        text-align: center;
+        width: 20vw;
+        font-size: 1.2rem;
+        justify-content: justify;
+        margin-left: 5rem;
+        padding: 3rem;
+    }
+    .warc {
+        padding: 5rem 0;
+        background-color: #f7f7f7;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .warc h1 {
+        margin-bottom: 3rem;
+    }
+    .stepss {
+        padding: 2rem 0;
+        width: 100%;
+        background-color: #FFFFFF;
+        display: flex;
+    }
+    .stepy {
+        width: 20rem;
+        font-size: 1rem;
+        padding: 3rem;
+    }
+    .stepy i {
+        font-size: 1.8rem;
+        color: #FF9A00;
+    }
+    .thingo {
+        width: 30vw;
+        margin: 3rem;
+        text-align: center;
+    }
+    .also {
+        padding: 3rem 0;
+        background-color: #f7f7f7;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .also h1 {
+        font-size: 2.5rem;
+    }
+    .thingo p {
+        font-size: 2rem;
+    }
+    .things {
+        display: flex;
+        flex-wrap: column wrap;
+        background-color: #FFFFFF;
+        margin: 0 3rem;
+    }
+    .things img {
+        width: 30rem;
+        height: 20rem;
+        border: 0.4rem solid blanchedalmond;
+    }
+    .conct {
+        text-align: center;
+        padding: 3rem;
+        background-color: #f7f7f7;
+    }
+    .cn {
+        font-size: 5rem;
+        padding: 2rem;
+    }
+    .cn a {
+        margin: 6rem;
+    }
+}
+
+@media (max-width:900px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        padding: 1rem;
+        width: 100vw;
+        height: 10vh;
+        background-color: #5CD2EF;
+        z-index: 1;
+    }
+    .about {
+        margin-left: -2rem;
+        margin-top: 70vh;
+    }
+    .about__content {
+        margin: 0vh auto;
+        width: 70vw;
+        padding: 4rem;
+        background-color: #ffffff;
+    }
+    .nav_img {
+        margin-top: -0.5rem;
+        margin-left: -4.8rem;
+        width: 20vw;
+    }
+    .nav_links {
+        font-size: 1.5vw;
+        float: right;
+        text-decoration: none;
+        padding: 1rem 3rem;
+        color: black;
+        font-weight: 400;
+    }
+    html {
+        font-size: 55%;
+    }
+    body {
+        padding: 0;
+    }
+    .slides {
+        padding: 0;
+        font-size: 20%;
+        width: 500%;
+        height: 70%;
+        display: flex;
+    }
+    .show {
+        width: 97.5vw;
+        background-color: #F7F7F7;
+        height: 65vh;
+        overflow: hidden;
+    }
+    .s3 h2 {
+        font-size: 1.5rem;
+    }
+    .slide img {
+        width: 100%;
+        height: 70%;
+    }
+    .process {
+        margin-top: 50rem;
+        padding: 5rem;
+        background-color: #f7f7f7;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .process button {
+        width: 14rem;
+        height: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        border-radius: 100px;
+        border: none;
+        background-color: #FFC20F;
+        transition: all .2s;
+        cursor: pointer;
+    }
+    .process button a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+        font-family: "lato";
+    }
+    .center {
+        padding-left: 2vw;
+    }
+    .steps {
+        background-color: #FFFFFF;
+        align-items: center;
+        text-align: center;
+        margin: 0 1.2vw;
+        display: flex;
+    }
+    .step i {
+        font-size: 1.8rem;
+        color: red;
+    }
+    .step {
+        text-align: center;
+        width: 20vw;
+        font-size: 1.2rem;
+        justify-content: justify;
+        margin-left: 5rem;
+        padding: 3rem;
+    }
+    .warc {
+        padding: 5rem 0;
+        background-color: #f7f7f7;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .warc h1 {
+        margin-bottom: 3rem;
+    }
+    .stepss {
+        padding: 2rem 0;
+        width: 100%;
+        background-color: #FFFFFF;
+        display: flex;
+    }
+    .stepy {
+        width: 20rem;
+        font-size: 1rem;
+        padding: 3rem;
+    }
+    .stepy i {
+        font-size: 1.8rem;
+        color: #FF9A00;
+    }
+    .thingo {
+        width: 30vw;
+        margin: 3rem;
+        text-align: center;
+    }
+    .also {
+        padding: 3rem 0;
+        background-color: #f7f7f7;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .also h1 {
+        font-size: 2.5rem;
+    }
+    .thingo p {
+        font-size: 2rem;
+    }
+    .things {
+        display: flex;
+        flex-wrap: column wrap;
+        background-color: #FFFFFF;
+        margin: 0 3rem;
+    }
+    .things img {
+        width: 30rem;
+        height: 20rem;
+        border: 0.4rem solid blanchedalmond;
+    }
+    .conct {
+        text-align: center;
+        padding: 3rem;
+        background-color: #f7f7f7;
+    }
+    .cn {
+        font-size: 5rem;
+        padding: 2rem;
+    }
+    .cn a {
+        margin: 6rem;
+    }
+}
+
+@media(max-width:600px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        padding: 1rem;
+        width: 100vw;
+        height: 10vh;
+        background-color: #5CD2EF;
+        z-index: 1;
+    }
+    .about {
+        margin-left: -2rem;
+        margin-top: 70vh;
+    }
+    .about__content {
+        margin: 0vh auto;
+        width: 70vw;
+        padding: 4rem;
+        background-color: #ffffff;
+    }
+    .nav_img {
+        margin: 0;
+        width: 20vw;
+    }
+    .nav_links {
+        float: right;
+        text-decoration: none;
+        font-size: 1.6rem;
+        padding: 1rem 1.2rem;
+        color: black;
+        font-weight: 400;
+    }
+    html {
+        font-size: 40%;
+    }
+    body {
+        padding: 0;
+    }
+    .slides {
+        padding: 0;
+        font-size: 20%;
+        width: 500%;
+        height: 70%;
+        display: flex;
+    }
+    .show {
+        width: 97.5vw;
+        background-color: #F7F7F7;
+        height: 65vh;
+        overflow: hidden;
+    }
+    .s3 h2 {
+        font-size: 1.5rem;
+    }
+    .slide img {
+        width: 100%;
+        height: 70%;
+    }
+    .process {
+        margin-top: 70rem;
+        padding: 5rem;
+        background-color: #f7f7f7;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .process button {
+        width: 14rem;
+        height: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        border-radius: 100px;
+        border: none;
+        background-color: #FFC20F;
+        transition: all .2s;
+        cursor: pointer;
+    }
+    .process button a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+        font-family: "lato";
+    }
+    .center {
+        padding-left: 2vw;
+    }
+    .steps {
+        background-color: #FFFFFF;
+        align-items: center;
+        text-align: center;
+        margin: 0 1.2vw;
+        display: flex;
+    }
+    .step i {
+        font-size: 1.8rem;
+        color: red;
+    }
+    .step {
+        text-align: center;
+        width: 20vw;
+        font-size: 1.2rem;
+        justify-content: justify;
+        margin-left: 5rem;
+        padding: 3rem;
+    }
+    .warc {
+        padding: 5rem 0;
+        background-color: #f7f7f7;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .warc h1 {
+        margin-bottom: 3rem;
+    }
+    .stepss {
+        padding: 2rem 0;
+        width: 100%;
+        background-color: #FFFFFF;
+        display: flex;
+    }
+    .stepy {
+        width: 20rem;
+        font-size: 1rem;
+        padding: 3rem;
+    }
+    .stepy i {
+        font-size: 1.8rem;
+        color: #FF9A00;
+    }
+    .thingo {
+        width: 30vw;
+        margin: 3rem;
+        text-align: center;
+    }
+    .also {
+        padding: 3rem 0;
+        background-color: #f7f7f7;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .also h1 {
+        font-size: 2.5rem;
+    }
+    .thingo p {
+        font-size: 2rem;
+    }
+    .things {
+        display: flex;
+        flex-wrap: column wrap;
+        background-color: #FFFFFF;
+        margin: 0 3rem;
+    }
+    .things img {
+        width: 30rem;
+        height: 20rem;
+        border: 0.4rem solid blanchedalmond;
+    }
+    .conct {
+        text-align: center;
+        padding: 3rem;
+        background-color: #f7f7f7;
+    }
+    .cn {
+        font-size: 5rem;
+        padding: 2rem;
+    }
+    .cn a {
+        margin: 6rem;
+    }
+}

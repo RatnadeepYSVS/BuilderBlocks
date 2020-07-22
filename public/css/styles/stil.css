@@ -1,0 +1,861 @@
+html {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 1px;
+    background-color: #FFFFFF;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    padding: 1rem;
+    width: 100%;
+    height: 10vh;
+    background-color: #5CD2EF;
+    z-index: 1;
+}
+
+ul {
+    margin-top: 0;
+    list-style: none;
+    display: flex;
+}
+
+.nav_img {
+    float: left;
+    margin-top: -0.5rem;
+    margin-left: -4.8rem;
+    width: 30vw;
+}
+
+.nav_links {
+    float: right;
+    text-decoration: none;
+    font-size: 1.15rem;
+    padding: 1rem 3rem;
+    color: black;
+    font-weight: 400;
+}
+
+.nav_in {
+    width: 10rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.disp {
+    text-align: center;
+    margin-top: 7rem;
+    margin-left: 2.5rem;
+}
+
+.pic img {
+    margin-top: 1rem;
+    width: 20rem;
+    border: 0.4rem solid blanchedalmond;
+}
+
+.backo {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.pic {
+    text-align: center;
+    width: 23rem;
+    margin: 1rem 1rem 1rem 0;
+    background-color: #f7f7f7;
+    padding: 1rem 0.5rem;
+}
+
+.pic button a {
+    font-family: "lato";
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.pic button {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: 100px;
+    border: none;
+    background-color: #FF4713;
+    cursor: pointer;
+}
+
+.pop {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.9s;
+}
+
+.pop_cont {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 70%;
+    background-color: #f7f7f7;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    display: flex;
+    overflow: hidden;
+}
+
+.popleft {
+    width: 60%;
+    background-color: #f7f7f7;
+}
+
+.popright {
+    width: 40%;
+    background-color: #f7f7f7;
+    padding: 2rem;
+}
+
+.popright button {
+    height: 2rem;
+    border-radius: 100px;
+    border: none;
+    background-color: #FF4713;
+    width: 10rem;
+}
+
+.popright .helo {
+    margin-left: 24rem;
+    font-size: 2rem;
+    font-family: "lato";
+    text-decoration: none;
+    color: black
+}
+
+#search {
+    width: 50rem;
+    height: 2rem;
+    border-radius: 100px;
+    border: 1px solid black;
+    font-family: "lato";
+    outline: none;
+}
+
+.popright button a {
+    font-size: 1.1rem;
+    font-family: "lato";
+    text-decoration: none;
+    color: white
+}
+
+.popimg {
+    width: 100%;
+}
+
+.pop:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.pot {
+    text-align: center;
+}
+
+.pot img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 2%;
+}
+
+footer {
+    background-color: #333333;
+}
+
+.content {
+    display: flex;
+}
+
+.secs {
+    width: 50rem;
+    color: white;
+    justify-content: justify;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+
+.secs p {
+    margin-top: 1rem;
+}
+
+.sec {
+    width: 50rem;
+    color: white;
+    justify-content: justify;
+    margin-left: 6rem;
+    margin-bottom: 3rem;
+}
+
+@media (max-width:1500px) {
+    html {
+        font-size: 100%;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        padding: 1rem 4rem;
+        width: 100%;
+        height: 10vh;
+        background-color: #5CD2EF;
+        z-index: 1;
+    }
+    ul {
+        margin-top: 0;
+        list-style: none;
+        display: flex;
+    }
+    .nav_img {
+        float: left;
+        margin-top: -0.5rem;
+        margin-left: -4.8rem;
+        width: 30vw;
+    }
+    .nav_links {
+        float: right;
+        text-decoration: none;
+        font-size: 1.45vw;
+        padding: 1rem 3vw;
+        color: black;
+        font-weight: 400;
+    }
+    .nav_in {
+        width: 10rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .disp {
+        text-align: center;
+        margin-top: 7rem;
+        margin-left: 2.5rem;
+    }
+    .pic img {
+        margin-top: 1rem;
+        width: 20vw;
+        border: 0.4rem solid blanchedalmond;
+    }
+    .backo {
+        margin-top: 2rem;
+        margin-left: 7%;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .pic {
+        text-align: center;
+        width: 25vw;
+        margin: 1rem 1rem 1rem 0;
+        background-color: #f7f7f7;
+        padding: 1rem 0.5rem;
+    }
+    .pic button a {
+        font-family: "lato";
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: white;
+    }
+    .pic button {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        height: 2.5rem;
+        width: 10rem;
+        border-radius: 100px;
+        border: none;
+        background-color: #FF4713;
+        cursor: pointer;
+    }
+    .pop {
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.9s;
+    }
+    .pop_cont {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 70%;
+        background-color: #f7f7f7;
+        box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+        display: flex;
+        overflow: hidden;
+    }
+    .popleft {
+        width: 60%;
+        background-color: #f7f7f7;
+    }
+    .popright {
+        width: 40%;
+        background-color: #f7f7f7;
+        padding: 2rem;
+    }
+    .popright button {
+        height: 2rem;
+        border-radius: 100px;
+        border: none;
+        background-color: #FF4713;
+        width: 10rem;
+    }
+    .popright .helo {
+        margin-left: 24rem;
+        font-size: 2rem;
+        font-family: "lato";
+        text-decoration: none;
+        color: black
+    }
+    #search {
+        width: 50rem;
+        height: 2rem;
+        border-radius: 100px;
+        border: 1px solid black;
+        font-family: "lato";
+        outline: none;
+    }
+    .popright button a {
+        font-size: 1.1rem;
+        font-family: "lato";
+        text-decoration: none;
+        color: white
+    }
+    .popimg {
+        width: 100%;
+        height: 100%;
+    }
+    .pop:target {
+        opacity: 1;
+        visibility: visible;
+    }
+    .pot {
+        text-align: center;
+    }
+    .pot img {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 2%;
+    }
+    footer {
+        background-color: #333333;
+    }
+    .content {
+        display: flex;
+    }
+    .secs {
+        width: 50rem;
+        color: white;
+        justify-content: justify;
+        margin-left: 3rem;
+        margin-bottom: 3rem;
+    }
+    .secs p {
+        margin-top: 1rem;
+    }
+    .sec {
+        width: 50rem;
+        color: white;
+        justify-content: justify;
+        margin-left: 6rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width:1200px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        padding: 1rem;
+        width: 100vw;
+        height: 10vh;
+        background-color: #5CD2EF;
+        z-index: 1;
+    }
+    .about {
+        margin-left: -2rem;
+        margin-top: 60vh;
+    }
+    .about__content {
+        margin: 0vh auto;
+        width: 70vw;
+        padding: 4rem;
+        background-color: #ffffff;
+    }
+    .nav_img {
+        margin: 0;
+        width: 20rem;
+    }
+    .nav_links {
+        text-decoration: none;
+        font-size: 2vw;
+        padding: 1vw 1.8vw;
+        color: black;
+        font-weight: 400;
+    }
+    html {
+        font-size: 75%;
+    }
+    body {
+        padding: 0;
+    }
+    .disp {
+        text-align: center;
+        margin-top: 7rem;
+        margin-left: 15rem;
+    }
+    .disp h1 {
+        margin-top: 10rem;
+    }
+    .pic img {
+        margin-top: 1rem;
+        width: 20rem;
+        border: 0.4rem solid blanchedalmond;
+    }
+    .backo {
+        display: flex;
+        flex-flow: wrap;
+    }
+    .pic {
+        text-align: center;
+        width: 23rem;
+        margin: 1rem 1rem 1rem 0;
+        background-color: #f7f7f7;
+        padding: 1rem 0.5rem;
+    }
+    .pic button a {
+        font-family: "lato";
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: white;
+    }
+    .pic button {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        height: 2.5rem;
+        width: 10rem;
+        border-radius: 100px;
+        border: none;
+        background-color: #FF4713;
+        cursor: pointer;
+    }
+    .pop {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.9s;
+    }
+    .pop_cont {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 55%;
+        background-color: #f7f7f7;
+        box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+        display: flex;
+        overflow: hidden;
+    }
+    .popleft {
+        width: 60%;
+        background-color: #f7f7f7;
+    }
+    .popright {
+        width: 40%;
+        background-color: #f7f7f7;
+        padding: 1rem;
+    }
+    .popright button {
+        height: 2rem;
+        border-radius: 100px;
+        border: none;
+        background-color: #FF4713;
+        width: 10rem;
+    }
+    .popright .helo {
+        margin-left: 24rem;
+        font-size: 1.3rem;
+        font-family: "lato";
+        text-decoration: none;
+        color: black
+    }
+    #search {
+        width: 50rem;
+        height: 2rem;
+        border-radius: 100px;
+        border: 1px solid black;
+        font-family: "lato";
+        outline: none;
+    }
+    .popright button a {
+        font-size: 1rem;
+        font-family: "lato";
+        text-decoration: none;
+        color: white
+    }
+    .popimg {
+        width: 100%;
+    }
+    .pop:target {
+        opacity: 1;
+        visibility: visible;
+    }
+    .pot {
+        text-align: center;
+    }
+    .pot img {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 2%;
+    }
+}
+
+@media (max-width:900px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        padding: 1rem;
+        width: 100vw;
+        height: 10vh;
+        background-color: #5CD2EF;
+        z-index: 1;
+    }
+    .about {
+        margin-left: -2rem;
+        margin-top: 60vh;
+    }
+    .about__content {
+        margin: 0vh auto;
+        width: 70vw;
+        padding: 4rem;
+        background-color: #ffffff;
+    }
+    .nav_img {
+        margin: 0;
+        width: 14rem;
+    }
+    .nav_links {
+        text-decoration: none;
+        font-size: 2vw;
+        padding: 1vw 1.8vw;
+        color: black;
+        font-weight: 400;
+    }
+    html {
+        font-size: 65%;
+    }
+    body {
+        padding: 0;
+    }
+    .disp {
+        text-align: center;
+        margin-top: 7rem;
+        margin-left: 15rem;
+    }
+    .disp h1 {
+        margin-top: 10rem;
+    }
+    .pic img {
+        margin-top: 1rem;
+        width: 20rem;
+        border: 0.4rem solid blanchedalmond;
+    }
+    .backo {
+        display: flex;
+        flex-flow: wrap;
+    }
+    .pic {
+        text-align: center;
+        width: 23rem;
+        margin: 1rem 1rem 1rem 0;
+        background-color: #f7f7f7;
+        padding: 1rem 0.5rem;
+    }
+    .pic button a {
+        font-family: "lato";
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: white;
+    }
+    .pic button {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        height: 2.5rem;
+        width: 10rem;
+        border-radius: 100px;
+        border: none;
+        background-color: #FF4713;
+        cursor: pointer;
+    }
+    .pop {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.9s;
+    }
+    .pop_cont {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 85vw;
+        height: 55vh;
+        background-color: #f7f7f7;
+        box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+        display: flex;
+        overflow: hidden;
+    }
+    .popleft {
+        font-size: 0.3rem;
+        width: 75%;
+        background-color: #f7f7f7;
+    }
+    .popright {
+        width: 40%;
+        background-color: #f7f7f7;
+        padding: 1rem;
+    }
+    .popright button {
+        height: 2rem;
+        border-radius: 100px;
+        border: none;
+        background-color: #FF4713;
+        width: 10rem;
+    }
+    .popright .helo {
+        margin-left: 34vw;
+        font-size: 1.1rem;
+        font-family: "lato";
+        text-decoration: none;
+        color: black
+    }
+    #search {
+        width: 50rem;
+        height: 2rem;
+        border-radius: 100px;
+        border: 1px solid black;
+        font-family: "lato";
+        outline: none;
+    }
+    .popright button a {
+        font-size: 1rem;
+        font-family: "lato";
+        text-decoration: none;
+        color: white
+    }
+    .popimg {
+        width: 140%;
+    }
+    .pop:target {
+        opacity: 1;
+        visibility: visible;
+    }
+    .pot {
+        text-align: center;
+    }
+    .pot img {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 2%;
+    }
+}
+
+@media(max-width:600px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        padding: 1rem;
+        width: 98vw;
+        height: 10vh;
+        background-color: #5CD2EF;
+        z-index: 1;
+    }
+    .about {
+        margin-left: -2rem;
+        margin-top: 60vh;
+    }
+    .about__content {
+        margin: 0vh auto;
+        width: 70vw;
+        padding: 4rem;
+        background-color: #ffffff;
+    }
+    .nav_img {
+        margin: 0;
+        width: 10rem;
+    }
+    .nav_links {
+        text-decoration: none;
+        font-size: 2vw;
+        padding: 1vw 1.8vw;
+        color: black;
+        font-weight: 400;
+    }
+    html {
+        font-size: 55%;
+    }
+    body {
+        padding: 0;
+    }
+    .disp {
+        text-align: center;
+        margin-top: 7rem;
+        margin-left: 15rem;
+    }
+    .disp h1 {
+        margin-top: 10rem;
+    }
+    .pic img {
+        margin-top: 1rem;
+        width: 20rem;
+        border: 0.4rem solid blanchedalmond;
+    }
+    .backo {
+        display: flex;
+        flex-flow: wrap;
+    }
+    .pic {
+        text-align: center;
+        width: 23rem;
+        margin: 1rem 1rem 1rem 0;
+        background-color: #f7f7f7;
+        padding: 1rem 0.5rem;
+    }
+    .pic button a {
+        font-family: "lato";
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: white;
+    }
+    .pic button {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        height: 2.5rem;
+        width: 10rem;
+        border-radius: 100px;
+        border: none;
+        background-color: #FF4713;
+        cursor: pointer;
+    }
+    .pop {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.9s;
+    }
+    .pop_cont {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 55vw;
+        background-color: #f7f7f7;
+        box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+        display: flex;
+        overflow: hidden;
+    }
+    .popleft {
+        width: 60%;
+        background-color: #f7f7f7;
+    }
+    .popright {
+        width: 40%;
+        background-color: #f7f7f7;
+        padding: 1rem;
+    }
+    .popright button {
+        height: 2rem;
+        border-radius: 100px;
+        border: none;
+        background-color: #FF4713;
+        width: 10rem;
+    }
+    .popright .helo {
+        margin-left: 28vw;
+        font-size: 1.3rem;
+        font-family: "lato";
+        text-decoration: none;
+        color: black
+    }
+    #search {
+        width: 50rem;
+        height: 2rem;
+        border-radius: 100px;
+        border: 1px solid black;
+        font-family: "lato";
+        outline: none;
+    }
+    .popright button a {
+        font-size: 1rem;
+        font-family: "lato";
+        text-decoration: none;
+        color: white
+    }
+    .popimg {
+        width: 180%;
+    }
+    .pop:target {
+        opacity: 1;
+        visibility: visible;
+    }
+    .pot {
+        text-align: center;
+    }
+    .pot img {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 2%;
+    }
+}

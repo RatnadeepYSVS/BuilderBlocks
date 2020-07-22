@@ -1,0 +1,1477 @@
+html {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 1px;
+    background-color: #FFFFFF;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    padding: 1rem;
+    width: 100%;
+    height: 10vh;
+    background-color: #5CD2EF;
+    z-index: 1;
+}
+
+ul {
+    margin-top: 0;
+    list-style: none;
+    display: flex;
+}
+
+.nav_img {
+    margin-top: -0.5rem;
+    margin-left: -4.8rem;
+    width: 30vw;
+}
+
+.nav_links {
+    float: right;
+    text-decoration: none;
+    font-size: 1.15rem;
+    padding: 1rem 3rem;
+    color: black;
+    font-weight: 400;
+}
+
+.show {
+    width: 98.5vw;
+    background-color: #F7F7F7;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.middle {
+    position: absolute;
+    top: 15.5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navigate {
+    position: absolute;
+    bottom: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.line {
+    width: 1rem;
+    height: 1rem;
+    border: 0.2rem solid #fff;
+    border-radius: 50%;
+    margin: .4rem;
+    cursor: pointer;
+}
+
+input[name="r"] {
+    visibility: hidden;
+    position: absolute;
+}
+
+.line:hover {
+    background-color: white;
+}
+
+.slides {
+    width: 500%;
+    height: 80%;
+    display: flex;
+}
+
+.slide {
+    padding: 1rem 0;
+    margin-top: 0.5rem;
+    width: 20%;
+    transition: 0.6s;
+}
+
+.s1 {
+    text-align: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #F7F7F7;
+}
+
+.s1 h1 {
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+
+.s2 {
+    text-align: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #F7F7F7;
+}
+
+.s2 h1 {
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+
+.s3 {
+    text-align: center;
+    align-items: center;
+    color: #F7F7F7;
+}
+
+.s3 h1 {
+    margin-top: 6rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.s3 h2 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.s3 button {
+    text-align: center;
+    padding: 0.6rem;
+    height: 3rem;
+    width: 20rem;
+    background-color: red;
+    border-radius: 100px;
+    margin: 0 28rem;
+    border: none;
+}
+
+.s3 button a {
+    font-size: 1.4rem;
+    font-family: "lato";
+    text-decoration: none;
+    color: white
+}
+
+.slide img {
+    width: 100%;
+    height: 80%;
+}
+
+#r1:checked~.s1 {
+    margin-left: 0;
+}
+
+#r2:checked~.s1 {
+    margin-left: -20%;
+}
+
+#r3:checked~.s1 {
+    margin-left: -40%;
+}
+
+.about {
+    padding: 1rem 0;
+    margin-top: 45rem;
+    margin-bottom: 8rem;
+    background-color: #F7F7F7;
+    text-align: center;
+}
+
+.about h1 {
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: black;
+}
+
+.about h3,
+.about h2 {
+    text-align: center;
+    position: relative;
+}
+
+.about img {
+    width: 50rem;
+}
+
+.about__content {
+    margin: 0 auto;
+    width: 70rem;
+    padding: 4rem;
+    background-color: #ffffff;
+}
+
+.about__content p {
+    font-size: 1rem;
+    margin-top: -0.3rem;
+    text-align: justify;
+    color: grey;
+    padding: 1rem;
+}
+
+.about__content h2::before {
+    content: "";
+    display: block;
+    width: 20rem;
+    height: 0.1rem;
+    position: absolute;
+    background: #000;
+    left: 0;
+    top: 50%;
+}
+
+.about__content h2::after {
+    content: "";
+    display: block;
+    width: 20rem;
+    height: 0.1rem;
+    position: absolute;
+    background: #000;
+    right: 0;
+    top: 50%;
+}
+
+.about__content h3::before {
+    content: "";
+    display: block;
+    width: 24rem;
+    height: 0.1rem;
+    position: absolute;
+    background: #000;
+    left: 0;
+    top: 50%;
+}
+
+.about__content h3::after {
+    content: "";
+    display: block;
+    width: 24rem;
+    height: 0.1rem;
+    position: absolute;
+    background: #000;
+    right: 0;
+    top: 50%;
+}
+
+.maincont {
+    position: relative;
+    width: 19.625rem;
+    height: 22rem;
+    background-color: #F7F7F7;
+    margin-left: 5rem;
+}
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    background: #F7F7F7
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.front-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.6), rgba(105, 105, 105, 0.5)), url(/css/images/kitchenstoo/kit.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.front-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.6), rgba(105, 105, 105, 0.5)), url(/css/images/kitchenstoo/bed.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.front-3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.6), rgba(105, 105, 105, 0.5)), url(https://images.pexels.com/photos/2089696/pexels-photo-2089696.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #FF9B00;
+    color: #333;
+    transform: rotateY(180deg);
+}
+
+.carddiv {
+    display: flex;
+}
+
+.cardhead .hec {
+    text-align: center;
+    position: relative;
+    padding: 2rem;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: black;
+}
+
+.front-1 h1,
+.front-2 h1,
+.front-3 h1,
+.back h1 {
+    text-align: center;
+}
+
+.cardhead {
+    margin-top: -3rem;
+    background-color: #F7F7F7;
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+    margin-bottom: 5rem;
+}
+
+.imgs img {
+    width: 8rem;
+    height: 4rem;
+    margin: 2rem;
+}
+
+.partners {
+    text-align: center;
+    background-color: #F7F7F7;
+    padding: 4rem 0;
+    margin-bottom: 5rem;
+}
+
+.partners h1 {
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: black;
+}
+
+.comments {
+    padding: 4rem;
+    background-color: #F7F7F7;
+}
+
+.comments h1 {
+    margin-top: 3rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.com {
+    width: 50rem;
+    padding: 1rem;
+    margin-left: 1rem;
+    display: flex;
+}
+
+.block {
+    margin-top: -1.2rem;
+    margin-left: 1.2rem;
+}
+
+.pos {
+    margin-top: 1rem;
+    display: flex;
+    margin-left: 2rem;
+}
+
+.comments button {
+    text-align: center;
+    padding: 0.6rem;
+    height: 3rem;
+    width: 20rem;
+    background-color: red;
+    border-radius: 100px;
+    margin: 3rem 24rem;
+    border: none;
+}
+
+.comments button a {
+    font-size: 1.4rem;
+    font-family: "lato";
+    text-decoration: none;
+    color: white
+}
+
+.pot {
+    text-align: center;
+}
+
+.pot img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 2%;
+}
+
+footer {
+    background-color: #333333;
+}
+
+.content {
+    display: flex;
+}
+
+.secs {
+    width: 50rem;
+    color: white;
+    justify-content: justify;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+
+.secs p {
+    margin-top: 1rem;
+}
+
+.sec {
+    width: 50rem;
+    color: white;
+    justify-content: justify;
+    margin-left: 6rem;
+    margin-bottom: 3rem;
+}
+
+@media(max-width:1500px) {
+    html {
+        font-size: 100%;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        padding: 1rem 4rem;
+        width: 100%;
+        height: 10vh;
+        background-color: #5CD2EF;
+        z-index: 1;
+    }
+    ul {
+        margin-top: 0;
+        list-style: none;
+        display: flex;
+    }
+    .nav_img {
+        margin-top: -0.5rem;
+        margin-left: -4.8rem;
+        width: 30vw;
+    }
+    .nav_links {
+        float: right;
+        text-decoration: none;
+        font-size: 1.45vw;
+        padding: 1rem 3vw;
+        color: black;
+        font-weight: 400;
+    }
+    .show {
+        width: 98.5vw;
+        background-color: #F7F7F7;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .middle {
+        position: absolute;
+        top: 15.5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .navigate {
+        position: absolute;
+        bottom: 20vh;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+    }
+    .line {
+        width: 1rem;
+        height: 1rem;
+        border: 0.2rem solid #fff;
+        border-radius: 50%;
+        margin: .4rem;
+        cursor: pointer;
+    }
+    input[name="r"] {
+        visibility: hidden;
+        position: absolute;
+    }
+    .line:hover {
+        background-color: white;
+    }
+    .slides {
+        width: 500%;
+        height: 80%;
+        display: flex;
+    }
+    .slide {
+        padding: 1rem 0;
+        margin-top: 0.5rem;
+        width: 20%;
+        transition: 0.6s;
+    }
+    .s1 {
+        text-align: center;
+        align-items: center;
+        font-size: 1.4rem;
+        color: #F7F7F7;
+    }
+    .s1 h1 {
+        margin-top: 6rem;
+        margin-bottom: 1rem;
+    }
+    .s2 {
+        text-align: center;
+        align-items: center;
+        font-size: 1.4rem;
+        color: #F7F7F7;
+    }
+    .s2 h1 {
+        margin-top: 6rem;
+        margin-bottom: 1rem;
+    }
+    .s3 {
+        text-align: center;
+        align-items: center;
+        color: #F7F7F7;
+    }
+    .s3 h1 {
+        margin-top: 6rem;
+        font-size: 8vh;
+        margin-bottom: 1rem;
+    }
+    .s3 h2 {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+    .s3 button {
+        text-align: center;
+        padding: 0.6rem;
+        height: 3rem;
+        width: 20rem;
+        background-color: red;
+        border-radius: 100px;
+        margin: 0 28rem;
+        border: none;
+    }
+    .s3 button a {
+        font-size: 1.4rem;
+        font-family: "lato";
+        text-decoration: none;
+        color: white
+    }
+    .slide img {
+        width: 100%;
+        height: 80%;
+    }
+    #r1:checked~.s1 {
+        margin-left: 0;
+    }
+    #r2:checked~.s1 {
+        margin-left: -20%;
+    }
+    #r3:checked~.s1 {
+        margin-left: -40%;
+    }
+    .about {
+        padding: 1rem 0;
+        margin-top: 110vh;
+        margin-bottom: 8rem;
+        background-color: #F7F7F7;
+        text-align: center;
+    }
+    .about h1 {
+        text-transform: uppercase;
+        font-size: 2.6rem;
+        font-weight: 700;
+        color: black;
+    }
+    .about h3,
+    .about h2 {
+        text-align: center;
+        position: relative;
+    }
+    .about img {
+        width: 50rem;
+    }
+    .about__content {
+        margin: 0 auto;
+        width: 70rem;
+        padding: 4rem;
+        background-color: #ffffff;
+    }
+    .about__content p {
+        font-size: 1rem;
+        margin-top: -0.3rem;
+        text-align: justify;
+        color: grey;
+        padding: 1rem;
+    }
+    .about__content h2::before {
+        content: "";
+        display: block;
+        width: 20rem;
+        height: 0.1rem;
+        position: absolute;
+        background: #000;
+        left: 0;
+        top: 50%;
+    }
+    .about__content h2::after {
+        content: "";
+        display: block;
+        width: 20rem;
+        height: 0.1rem;
+        position: absolute;
+        background: #000;
+        right: 0;
+        top: 50%;
+    }
+    .about__content h3::before {
+        content: "";
+        display: block;
+        width: 24rem;
+        height: 0.1rem;
+        position: absolute;
+        background: #000;
+        left: 0;
+        top: 50%;
+    }
+    .about__content h3::after {
+        content: "";
+        display: block;
+        width: 24rem;
+        height: 0.1rem;
+        position: absolute;
+        background: #000;
+        right: 0;
+        top: 50%;
+    }
+    .maincont {
+        position: relative;
+        width: 20rem;
+        height: 20rem;
+        background-color: #F7F7F7;
+        margin: 0 6%;
+    }
+    .card {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease;
+        background: #F7F7F7
+    }
+    .card:hover {
+        transform: rotateY(180deg);
+    }
+    .front-1 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.6), rgba(105, 105, 105, 0.5)), url(/css/images/kitchenstoo/kit.jpg);
+        background-size: cover;
+        overflow: hidden;
+    }
+    .front-2 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.6), rgba(105, 105, 105, 0.5)), url(/css/images/kitchenstoo/bed.jpg);
+        background-size: cover;
+        overflow: hidden;
+    }
+    .front-3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.6), rgba(105, 105, 105, 0.5)), url(https://images.pexels.com/photos/2089696/pexels-photo-2089696.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-size: cover;
+        overflow: hidden;
+    }
+    .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background: #FF9B00;
+        color: #333;
+        transform: rotateY(180deg);
+    }
+    .back button {
+        width: 8rem;
+        height: 3rem;
+        border-radius: 100px;
+        border: none;
+        margin-top: 4vw;
+        margin-left: 30%;
+    }
+    .back p {
+        justify-content: center;
+        color: white;
+        margin-top: 3rem;
+        margin-left: 4vw;
+        font-size: 1rem;
+    }
+    .carddiv {
+        display: flex;
+    }
+    .cardhead .hec {
+        text-align: center;
+        position: relative;
+        padding: 2rem;
+        text-transform: uppercase;
+        font-size: 2.6rem;
+        font-weight: 700;
+        color: black;
+    }
+    .front-1 h1,
+    .front-2 h1,
+    .front-3 h1,
+    .back h1 {
+        text-align: center;
+    }
+    .cardhead {
+        margin-top: -3rem;
+        background-color: #F7F7F7;
+        padding-top: 2rem;
+        padding-bottom: 10rem;
+        margin-bottom: 5rem;
+    }
+    .imgs img {
+        width: 10vw;
+        height: 4rem;
+        margin: 2rem;
+    }
+    .partners {
+        text-align: center;
+        background-color: #F7F7F7;
+        padding: 4rem 0;
+        margin-bottom: 5rem;
+    }
+    .partners h1 {
+        text-transform: uppercase;
+        font-size: 2.6rem;
+        font-weight: 700;
+        color: black;
+    }
+    .comments {
+        padding: 4rem;
+        background-color: #F7F7F7;
+    }
+    .comments h1 {
+        margin-top: 3rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .com {
+        width: 50rem;
+        padding: 1rem;
+        margin-left: 1rem;
+        display: flex;
+    }
+    .block {
+        margin-top: -1.2rem;
+        margin-left: 1.2rem;
+    }
+    .pos {
+        margin-top: 1rem;
+        display: flex;
+        margin-left: 5vw;
+    }
+    .comments button {
+        text-align: center;
+        padding: 0.6rem;
+        height: 3rem;
+        width: 20rem;
+        background-color: red;
+        border-radius: 100px;
+        margin: 3rem 33.5vw;
+        border: none;
+    }
+    .comments button a {
+        font-size: 1.4rem;
+        font-family: "lato";
+        text-decoration: none;
+        color: white
+    }
+    .pot {
+        text-align: center;
+    }
+    .pot img {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 2%;
+    }
+    footer {
+        background-color: #333333;
+    }
+    .content {
+        display: flex;
+    }
+    .secs {
+        width: 50rem;
+        color: white;
+        justify-content: justify;
+        margin-left: 3rem;
+        margin-bottom: 3rem;
+    }
+    .secs p {
+        margin-top: 1rem;
+    }
+    .sec {
+        width: 50rem;
+        color: white;
+        justify-content: justify;
+        margin-left: 6rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width:1200px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        padding: 1rem;
+        width: 100vw;
+        height: 10vh;
+        background-color: #5CD2EF;
+        z-index: 1;
+    }
+    .about {
+        margin-left: -2rem;
+        margin-top: 60vh;
+    }
+    .about__content {
+        margin: 0vh auto;
+        width: 70vw;
+        padding: 4rem;
+        background-color: #ffffff;
+    }
+    .nav_img {
+        margin: 0;
+        width: 20rem;
+    }
+    .nav_links {
+        text-decoration: none;
+        font-size: 2vw;
+        padding: 1vw 1.8vw;
+        color: black;
+        font-weight: 400;
+    }
+    html {
+        font-size: 72%;
+    }
+    body {
+        padding: 0;
+    }
+    .about {
+        padding: 1rem 0;
+        margin-top: 55rem;
+        margin-bottom: 8rem;
+        background-color: #F7F7F7;
+        text-align: center;
+    }
+    .slides {
+        padding: 0;
+        font-size: 20%;
+        width: 500%;
+        height: 100%;
+        display: flex;
+    }
+    .show {
+        width: 97.5vw;
+        background-color: #F7F7F7;
+        height: 90vh;
+        overflow: hidden;
+    }
+    .slide img {
+        width: 100%;
+        height: 70%;
+    }
+    #r1:checked~.s1 {
+        margin-left: 0;
+    }
+    #r2:checked~.s1 {
+        margin-left: -20%;
+    }
+    #r3:checked~.s1 {
+        margin-left: -40%;
+    }
+    .maincont {
+        position: relative;
+        width: 21.625rem;
+        height: 22rem;
+        background-color: #F7F7F7;
+        margin-right: 4.8%;
+        margin-left: 7%;
+    }
+    .card {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease;
+        background: #F7F7F7
+    }
+    .card:hover {
+        transform: rotateY(180deg);
+    }
+    .front-1 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.6), rgba(105, 105, 105, 0.5)), url(/css/images/kitchenstoo/kit.jpg);
+        background-size: cover;
+        overflow: hidden;
+    }
+    .front-2 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.6), rgba(105, 105, 105, 0.5)), url(/css/images/kitchenstoo/bed.jpg);
+        background-size: cover;
+        overflow: hidden;
+    }
+    .front-3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.6), rgba(105, 105, 105, 0.5)), url(https://images.pexels.com/photos/2089696/pexels-photo-2089696.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-size: cover;
+        overflow: hidden;
+    }
+    .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background: #FF9B00;
+        color: #333;
+        transform: rotateY(180deg);
+    }
+    .carddiv {
+        display: flex;
+    }
+    .cardhead .hec {
+        text-align: center;
+        position: relative;
+        padding: 2rem;
+        text-transform: uppercase;
+        font-size: 2.6rem;
+        font-weight: 700;
+        color: black;
+    }
+    .front-1 h1,
+    .front-2 h1,
+    .front-3 h1,
+    .back h1 {
+        text-align: center;
+    }
+    .cardhead {
+        margin-top: -3rem;
+        background-color: #F7F7F7;
+        padding-top: 2rem;
+        padding-bottom: 10rem;
+        margin-bottom: 5rem;
+    }
+    .imgs img {
+        width: 8.2rem;
+        height: 4rem;
+        margin: 2.2rem 4rem;
+    }
+    .spec {
+        margin-left: 12rem;
+    }
+    .comments button {
+        text-align: center;
+        padding: 0.6rem;
+        height: 3rem;
+        width: 20rem;
+        background-color: red;
+        border-radius: 100px;
+        margin-top: 3rem;
+        margin-left: 38%;
+        border: none;
+    }
+    .comments button a {
+        font-size: 1.4rem;
+        font-family: "lato";
+        text-decoration: none;
+        color: white
+    }
+}
+
+@media (max-width:900px) {
+    .about__content h2::before {
+        content: "";
+        display: block;
+        width: 24vw;
+        height: 0.1rem;
+        position: absolute;
+        background: #000;
+        left: 0;
+        top: 50%;
+    }
+    .about__content h2::after {
+        content: "";
+        display: block;
+        width: 24vw;
+        height: 0.1rem;
+        position: absolute;
+        background: #000;
+        right: 0;
+        top: 50%;
+    }
+    .about__content h3::before {
+        content: "";
+        display: block;
+        width: 30vw;
+        height: 0.1rem;
+        position: absolute;
+        background: #000;
+        left: 0;
+        top: 50%;
+    }
+    .about__content h3::after {
+        content: "";
+        display: block;
+        width: 30vw;
+        height: 0.1rem;
+        position: absolute;
+        background: #000;
+        right: 0;
+        top: 50%;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        padding: 1rem;
+        width: 100vw;
+        height: 10vh;
+        background-color: #5CD2EF;
+        z-index: 1;
+    }
+    .navigate {
+        position: absolute;
+        top: 24rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+    }
+    .about {
+        padding: 1rem 0;
+        margin-top: 50rem;
+        margin-bottom: 8rem;
+        background-color: #F7F7F7;
+        text-align: center;
+    }
+    .about__content {
+        margin: 0 auto;
+        width: 80vw;
+        padding: 4rem;
+        background-color: #ffffff;
+    }
+    .nav_img {
+        margin-top: -0.5rem;
+        margin-left: -4.8rem;
+        width: 20vw;
+    }
+    .nav_links {
+        font-size: 1.2rem;
+        float: right;
+        text-decoration: none;
+        padding: 1rem 3rem;
+        color: black;
+        font-weight: 400;
+    }
+    html {
+        font-size: 60%;
+    }
+    body {
+        padding: 0;
+    }
+    .slides {
+        padding: 0;
+        font-size: 20%;
+        width: 500%;
+        height: 80%;
+        display: flex;
+    }
+    .show {
+        width: 97.5vw;
+        background-color: #F7F7F7;
+        height: 70vh;
+        overflow: hidden;
+    }
+    .s3 h2 {
+        font-size: 1.5rem;
+    }
+    .slide img {
+        width: 100%;
+        height: 70%;
+    }
+    #r1:checked~.s1 {
+        margin-left: 0;
+    }
+    #r2:checked~.s1 {
+        margin-left: -20%;
+    }
+    #r3:checked~.s1 {
+        margin-left: -40%;
+    }
+    .maincont {
+        position: relative;
+        width: 21.625rem;
+        height: 22rem;
+        background-color: #F7F7F7;
+        margin-right: 4.8%;
+        margin-left: 7%;
+    }
+    .card {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease;
+        background: #F7F7F7
+    }
+    .card:hover {
+        transform: rotateY(180deg);
+    }
+    .front-1 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.6), rgba(105, 105, 105, 0.5)), url(/css/images/kitchenstoo/kit.jpg);
+        background-size: cover;
+        overflow: hidden;
+    }
+    .front-2 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.6), rgba(105, 105, 105, 0.5)), url(/css/images/kitchenstoo/bed.jpg);
+        background-size: cover;
+        overflow: hidden;
+    }
+    .front-3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.6), rgba(105, 105, 105, 0.5)), url(https://images.pexels.com/photos/2089696/pexels-photo-2089696.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-size: cover;
+        overflow: hidden;
+    }
+    .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background: #FF9B00;
+        color: #333;
+        transform: rotateY(180deg);
+    }
+    .carddiv {
+        display: flex;
+    }
+    .cardhead .hec {
+        text-align: center;
+        position: relative;
+        padding: 2rem;
+        text-transform: uppercase;
+        font-size: 2.6rem;
+        font-weight: 700;
+        color: black;
+    }
+    .front-1 h1,
+    .front-2 h1,
+    .front-3 h1,
+    .back h1 {
+        text-align: center;
+    }
+    .cardhead {
+        margin-top: -3rem;
+        background-color: #F7F7F7;
+        padding-top: 2rem;
+        padding-bottom: 10rem;
+        margin-bottom: 5rem;
+    }
+    .posy {
+        margin-left: 12rem;
+    }
+    .imgs img {
+        width: 7rem;
+        height: 4rem;
+        margin: 2.2rem 4rem;
+    }
+    .spec {
+        margin-left: 10rem;
+    }
+    .comments button {
+        text-align: center;
+        padding: 0.6rem;
+        height: 3rem;
+        width: 20rem;
+        background-color: red;
+        border-radius: 100px;
+        margin-top: 3rem;
+        margin-left: 38%;
+        border: none;
+    }
+    .comments button a {
+        font-size: 1.4rem;
+        font-family: "lato";
+        text-decoration: none;
+        color: white
+    }
+}
+
+@media(max-width:600px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        padding: 1rem 3rem;
+        width: 100vw;
+        height: 10vh;
+        background-color: #5CD2EF;
+        z-index: 1;
+    }
+    .about {
+        margin-top: 70vh;
+    }
+    .about__content {
+        margin: 0vh auto;
+        width: 70vw;
+        padding: 4rem;
+        background-color: #ffffff;
+    }
+    .nav_img {
+        margin-top: -0.5rem;
+        width: 30vw;
+    }
+    .nav_links {
+        float: right;
+        text-decoration: none;
+        font-size: 1.6rem;
+        padding: 1rem 1.2rem;
+        color: black;
+        font-weight: 400;
+    }
+    html {
+        font-size: 40%;
+    }
+    body {
+        padding: 0;
+    }
+    .slides {
+        padding: 0;
+        font-size: 20%;
+        width: 500%;
+        height: 80%;
+        display: flex;
+    }
+    .show {
+        width: 97.5vw;
+        background-color: #F7F7F7;
+        height: 50vh;
+        overflow: hidden;
+    }
+    .s3 h2 {
+        font-size: 1.5rem;
+    }
+    .slide img {
+        width: 100%;
+        height: 70%;
+    }
+    #r1:checked~.s1 {
+        margin-left: 0;
+    }
+    #r2:checked~.s1 {
+        margin-left: -20%;
+    }
+    #r3:checked~.s1 {
+        margin-left: -40%;
+    }
+    .maincont {
+        position: relative;
+        width: 21.625rem;
+        height: 22rem;
+        background-color: #F7F7F7;
+        margin-right: 4.8%;
+        margin-left: 7%;
+    }
+    .card {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease;
+        background: #F7F7F7
+    }
+    .card:hover {
+        transform: rotateY(180deg);
+    }
+    .front-1 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.6), rgba(105, 105, 105, 0.5)), url(/css/images/kitchenstoo/kit.jpg);
+        background-size: cover;
+        overflow: hidden;
+    }
+    .front-2 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.6), rgba(105, 105, 105, 0.5)), url(/css/images/kitchenstoo/bed.jpg);
+        background-size: cover;
+        overflow: hidden;
+    }
+    .front-3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.6), rgba(105, 105, 105, 0.5)), url(https://images.pexels.com/photos/2089696/pexels-photo-2089696.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-size: cover;
+        overflow: hidden;
+    }
+    .about__content h2::before {
+        content: "";
+        display: block;
+        width: 20vw;
+        height: 0.1rem;
+        position: absolute;
+        background: #000;
+        left: 0;
+        top: 50%;
+    }
+    .about__content h2::after {
+        content: "";
+        display: block;
+        width: 20vw;
+        height: 0.1rem;
+        position: absolute;
+        background: #000;
+        right: 0;
+        top: 50%;
+    }
+    .about__content h3::before {
+        content: "";
+        display: block;
+        width: 24vw;
+        height: 0.1rem;
+        position: absolute;
+        background: #000;
+        left: 0;
+        top: 50%;
+    }
+    .about__content h3::after {
+        content: "";
+        display: block;
+        width: 24vw;
+        height: 0.1rem;
+        position: absolute;
+        background: #000;
+        right: 0;
+        top: 50%;
+    }
+    .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background: #FF9B00;
+        color: #333;
+        transform: rotateY(180deg);
+    }
+    .carddiv {
+        display: flex;
+    }
+    .cardhead .hec {
+        text-align: center;
+        position: relative;
+        padding: 2rem;
+        text-transform: uppercase;
+        font-size: 2.6rem;
+        font-weight: 700;
+        color: black;
+    }
+    .front-1 h1,
+    .front-2 h1,
+    .front-3 h1,
+    .back h1 {
+        text-align: center;
+    }
+    .cardhead {
+        margin-top: -3rem;
+        background-color: #F7F7F7;
+        padding-top: 2rem;
+        padding-bottom: 10rem;
+        margin-bottom: 5rem;
+    }
+    .posy {
+        margin-left: 12rem;
+    }
+    .pos {
+        margin: 0;
+    }
+    .imgs img {
+        width: 7rem;
+        height: 4rem;
+        margin: 2.2rem 4rem;
+    }
+    .spec {
+        margin-left: 10rem;
+    }
+    .comments {
+        width: 90vw;
+    }
+    .comments button {
+        text-align: center;
+        padding: 0.6rem;
+        height: 3rem;
+        width: 20rem;
+        background-color: red;
+        border-radius: 100px;
+        margin-top: 3rem;
+        margin-left: 38%;
+        border: none;
+    }
+    .comments button a {
+        font-size: 1.4rem;
+        font-family: "lato";
+        text-decoration: none;
+        color: white
+    }
+}
